@@ -1,0 +1,1141 @@
+[
+    {
+        "id": "b3a5d5d6d8f76d4b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9a041828a191e6cc",
+        "type": "mqtt in",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "topic": "PICTURE",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ca293c65336ed36f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 40,
+        "wires": [
+            [
+                "118d6ac0bc2e77cb"
+            ]
+        ]
+    },
+    {
+        "id": "118d6ac0bc2e77cb",
+        "type": "image",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Message 2",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 230,
+        "y": 40,
+        "wires": [
+            [
+                "5060ef893ef75645"
+            ]
+        ]
+    },
+    {
+        "id": "685595255139cfdc",
+        "type": "file",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04042b60568983cd",
+        "type": "mqtt out",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "topic": "PHOTO",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ca293c65336ed36f",
+        "x": 280,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d62535db8eba3af3",
+        "type": "mqtt in",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "topic": "DISTANCE",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ca293c65336ed36f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 920,
+        "wires": [
+            [
+                "b603018edca63d3d"
+            ]
+        ]
+    },
+    {
+        "id": "e728c2d387766269",
+        "type": "mqtt in",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "topic": "SPEED",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ca293c65336ed36f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 980,
+        "wires": [
+            [
+                "1a06f194988fd92d"
+            ]
+        ]
+    },
+    {
+        "id": "394c3d73300fba70",
+        "type": "mqtt in",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "topic": "LATITUDE",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ca293c65336ed36f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 1040,
+        "wires": [
+            [
+                "c0e77a50f4e05060"
+            ]
+        ]
+    },
+    {
+        "id": "9f2034aeb0c7cb8e",
+        "type": "mqtt in",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "topic": "LONGITUDE",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ca293c65336ed36f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 1100,
+        "wires": [
+            [
+                "051a5a2d7fac1657"
+            ]
+        ]
+    },
+    {
+        "id": "8d3e89cc0978f132",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "de5cabd3752cb345",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "29d2ccad42f71de8",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "e1debaaf68bc0983",
+        "type": "inject",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Every second",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "04042b60568983cd",
+                "5f25d34ea46cdc32"
+            ]
+        ]
+    },
+    {
+        "id": "793fc53f010f04a5",
+        "type": "exec",
+        "z": "b3a5d5d6d8f76d4b",
+        "command": "ffmpeg -framerate 1/5 -pattern_type glob -i '/home/pi/camcaptures/*.jpg' -c:v libx264 -r 30 -pix_fmt yuv420p /home/pi/camrecord/video.mp4",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "convert to vid",
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "f9f7c0b476f6df5a"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "224b060292c9ca60",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Set file name",
+        "func": "var file_path = \"/home/pi/camcaptures\"; // Replace with your desired file path\nvar file_format = \"jpg\"; // Replace with your desired file format\n\nvar now = new Date();\nvar timestamp = now.toISOString().replace(/:/g, \"-\"); // Generate timestamp in ISO format and replace \":\" with \"-\"\n\nmsg.filename = `${file_path}/${timestamp}.${file_format}`;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 40,
+        "wires": [
+            [
+                "c84dcf390a2476a4"
+            ]
+        ]
+    },
+    {
+        "id": "5060ef893ef75645",
+        "type": "change",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 40,
+        "wires": [
+            [
+                "224b060292c9ca60",
+                "e279082549eac120"
+            ]
+        ]
+    },
+    {
+        "id": "258334e1f51bb066",
+        "type": "inject",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [
+                "793fc53f010f04a5"
+            ]
+        ]
+    },
+    {
+        "id": "0ee21ee4118ac370",
+        "type": "exec",
+        "z": "b3a5d5d6d8f76d4b",
+        "command": "rm -r /home/pi/camcaptures/*",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 980,
+        "y": 800,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8dff093f2d5d3a91",
+        "type": "exec",
+        "z": "b3a5d5d6d8f76d4b",
+        "command": "rm -r /home/pi/camrecord/*",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 980,
+        "y": 860,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "26e6719c7440565b",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "b603018edca63d3d",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Distance global",
+        "func": "global.set('dist', msg.payload); // to store a variable\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 920,
+        "wires": [
+            [
+                "26e6719c7440565b"
+            ]
+        ]
+    },
+    {
+        "id": "c84dcf390a2476a4",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Distance is not safe",
+        "func": "if(global.get('safe') == 0){\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 40,
+        "wires": [
+            [
+                "14f742d9857d422c",
+                "685595255139cfdc"
+            ]
+        ]
+    },
+    {
+        "id": "478c9743c5959dab",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Distance is safe",
+        "func": "if (global.get('safe') == 1) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 100,
+        "wires": [
+            [
+                "f6ce1ed2b3577ee8",
+                "f5508d36c9e71a0d"
+            ]
+        ]
+    },
+    {
+        "id": "cad1864430a5335e",
+        "type": "sqlite",
+        "z": "b3a5d5d6d8f76d4b",
+        "mydb": "d45dbd8e66552cec",
+        "sqlquery": "fixed",
+        "sql": "SELECT * FROM duom",
+        "name": "",
+        "x": 150,
+        "y": 820,
+        "wires": [
+            [
+                "d214e999.f69b"
+            ]
+        ]
+    },
+    {
+        "id": "cef7449933c676ed",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Insert to local DB ",
+        "func": "msg.topic = 'INSERT INTO duom (latitude, longitude, speed, distance, path, timestamp) VALUES ($val1, $val2, $val3, $val4, $val5, datetime(\"now\"));'\nmsg.payload = [global.get('lat'), global.get('long'), global.get('speed'), global.get('dist'), \"https://storegiukas.blob.core.windows.net/konteineriukas/\" + global.get('video') + \".mp4\"];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 700,
+        "wires": [
+            [
+                "c7d205a13df764c5"
+            ]
+        ]
+    },
+    {
+        "id": "c7d205a13df764c5",
+        "type": "sqlite",
+        "z": "b3a5d5d6d8f76d4b",
+        "mydb": "d45dbd8e66552cec",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "",
+        "x": 870,
+        "y": 700,
+        "wires": [
+            [
+                "cad1864430a5335e"
+            ]
+        ]
+    },
+    {
+        "id": "29f509aec00aca7b",
+        "type": "Azure SQL",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Azure SQL",
+        "x": 550,
+        "y": 820,
+        "wires": [
+            [
+                "3e18023d55265338",
+                "0ee21ee4118ac370",
+                "8dff093f2d5d3a91",
+                "b5f5b5ab.06de1"
+            ]
+        ]
+    },
+    {
+        "id": "051a5a2d7fac1657",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Longitude global",
+        "func": "global.set('long', msg.payload); // to store a variable\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1100,
+        "wires": [
+            [
+                "29d2ccad42f71de8"
+            ]
+        ]
+    },
+    {
+        "id": "c0e77a50f4e05060",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Latitude global",
+        "func": "global.set('lat', msg.payload); // to store a variable\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1040,
+        "wires": [
+            [
+                "de5cabd3752cb345"
+            ]
+        ]
+    },
+    {
+        "id": "1a06f194988fd92d",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Speed global",
+        "func": "global.set('speed', msg.payload); // to store a variable\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 980,
+        "wires": [
+            [
+                "8d3e89cc0978f132"
+            ]
+        ]
+    },
+    {
+        "id": "5f25d34ea46cdc32",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Is distance safe?",
+        "func": "var safe = 1;\nif (global.get('speed') < 16 ) {\n    if (global.get('dist') < 0.5){\n        safe = 0;\n    }\n    else safe = 1;\n    \n}\nelse if (global.get('speed') < 48 && global.get('dist') < 6) {\n    safe = 0;\n}\nelse if (global.get('speed') > 48 && global.get('dist') < 9) {\n    safe = 0;\n}\nelse {\n    safe = 1;\n}\nglobal.set('safe', safe);\n\nmsg.payload = safe;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "fa7db04e7f263ca5"
+            ]
+        ]
+    },
+    {
+        "id": "0e4adffba59d85ce",
+        "type": "rbe",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 730,
+        "y": 100,
+        "wires": [
+            [
+                "478c9743c5959dab"
+            ]
+        ]
+    },
+    {
+        "id": "e279082549eac120",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "function 1",
+        "func": "msg.payload = global.get('safe');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "0e4adffba59d85ce"
+            ]
+        ]
+    },
+    {
+        "id": "f6ce1ed2b3577ee8",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f5508d36c9e71a0d",
+        "type": "delay",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "30",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 900,
+        "y": 220,
+        "wires": [
+            [
+                "793fc53f010f04a5"
+            ]
+        ]
+    },
+    {
+        "id": "fa7db04e7f263ca5",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d214e999.f69b",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Construct SQL Query",
+        "func": "var items = msg.payload;\nvar values = items.map(function(item) {\n    return `('${item.speed}', '${item.distance}', '${item.latitude}', '${item.longitude}', '${item.path}', '${item.timestamp}')`;\n}).join(\", \");\n\nmsg.payload = {\n    \"action\": \"I\", \"query\": \"insert into dbo.Todoes (Speed, Distance, Latitude, Longditude, PathorVideo, TIMESTAMP) VALUES \" + values };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 820,
+        "wires": [
+            [
+                "29f509aec00aca7b"
+            ]
+        ]
+    },
+    {
+        "id": "3e18023d55265338",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "14f742d9857d422c",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "35cc7843.f6372c",
+        "type": "inject",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "/home/pi/camrecord/video.mp4",
+        "payloadType": "str",
+        "x": 470,
+        "y": 560,
+        "wires": [
+            [
+                "41b063310a0897ea"
+            ]
+        ]
+    },
+    {
+        "id": "b90ed42988c3d472",
+        "type": "Aleph Save Blob",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Azure Save Blob Storage",
+        "x": 830,
+        "y": 620,
+        "wires": [
+            [
+                "92f911ab23d42a78",
+                "43e426294008db02"
+            ]
+        ]
+    },
+    {
+        "id": "92f911ab23d42a78",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "41b063310a0897ea",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "function 2",
+        "func": "msg.payload = \"/home/pi/camrecord/\" + global.get('video') + \".mp4\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 620,
+        "wires": [
+            [
+                "b90ed42988c3d472"
+            ]
+        ]
+    },
+    {
+        "id": "563791e3.bf8d28",
+        "type": "inject",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "old_filename",
+                "v": "/home/pi/camrecord/video.mp4",
+                "vt": "str"
+            },
+            {
+                "p": "new_filename",
+                "v": "/home/pi/camrecord/",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 670,
+        "y": 380,
+        "wires": [
+            [
+                "fec4bae2ac526531"
+            ]
+        ]
+    },
+    {
+        "id": "35b5f1b5.5de5e",
+        "type": "exec",
+        "z": "b3a5d5d6d8f76d4b",
+        "command": "mv /home/pi/camrecord/video.mp4 ",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 660,
+        "y": 480,
+        "wires": [
+            [
+                "8759e466f0289944",
+                "41b063310a0897ea"
+            ],
+            [
+                "8759e466f0289944"
+            ],
+            [
+                "8759e466f0289944"
+            ]
+        ]
+    },
+    {
+        "id": "fec4bae2ac526531",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Set name to timestamp",
+        "func": "var date = Date.now();\nvar name = \"/home/pi/camrecord/\";\nname += date;\nname += \".mp4\";\nmsg.payload = name;\nglobal.set('video', date);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 380,
+        "wires": [
+            [
+                "35b5f1b5.5de5e"
+            ]
+        ]
+    },
+    {
+        "id": "8759e466f0289944",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 18",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "1632f87cb315c27d",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f9f7c0b476f6df5a",
+        "type": "delay",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 300,
+        "wires": [
+            [
+                "fec4bae2ac526531"
+            ]
+        ]
+    },
+    {
+        "id": "43e426294008db02",
+        "type": "delay",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1020,
+        "y": 660,
+        "wires": [
+            [
+                "232c39307e4eb161"
+            ]
+        ]
+    },
+    {
+        "id": "232c39307e4eb161",
+        "type": "function",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "If no errors",
+        "func": "if (!msg.payload.includes(\"Error\")) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 700,
+        "wires": [
+            [
+                "cef7449933c676ed"
+            ]
+        ]
+    },
+    {
+        "id": "96a00b23.6b0a38",
+        "type": "inject",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "Delete all records",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 680,
+        "y": 940,
+        "wires": [
+            [
+                "b5f5b5ab.06de1"
+            ]
+        ]
+    },
+    {
+        "id": "b5f5b5ab.06de1",
+        "type": "sqlite",
+        "z": "b3a5d5d6d8f76d4b",
+        "mydb": "d45dbd8e66552cec",
+        "sqlquery": "fixed",
+        "sql": "DELETE FROM duom;",
+        "name": "SQLite",
+        "x": 900,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9b13793a963995c",
+        "type": "sqlite",
+        "z": "b3a5d5d6d8f76d4b",
+        "mydb": "d45dbd8e66552cec",
+        "sqlquery": "fixed",
+        "sql": "SELECT * FROM duom",
+        "name": "",
+        "x": 870,
+        "y": 1000,
+        "wires": [
+            [
+                "8c77d58585f869b6"
+            ]
+        ]
+    },
+    {
+        "id": "f9ddfb2dbc3ff91e",
+        "type": "inject",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 700,
+        "y": 1000,
+        "wires": [
+            [
+                "b9b13793a963995c"
+            ]
+        ]
+    },
+    {
+        "id": "8c77d58585f869b6",
+        "type": "debug",
+        "z": "b3a5d5d6d8f76d4b",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "ca293c65336ed36f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d45dbd8e66552cec",
+        "type": "sqlitedb",
+        "db": "/home/pi/data.db",
+        "mode": "RWC"
+    }
+]
